@@ -165,7 +165,7 @@
                             <label for="telp" class="col-md-4 col-form-label text-md-right">{{ __('Telpon') }}</label>
 
                             <div class="col-md-6">
-                                <input id="telp" type="text" class="form-control @error('telp') is-invalid @enderror" name="telp" value="{{ old('telp') }}" required autocomplete="telp" autofocus>
+                                <input id="telp" type="text" class="form-control @error('telp') is-invalid @enderror" name="telp" value="{{ old('telp') }}" onkeypress="return validateAngka(event)"  title="only letters" required autocomplete="telp" autofocus>
 
                                 @error('telp')
                                 <span class="invalid-feedback" role="alert">
@@ -264,5 +264,17 @@
             $("#jenis_user").trigger('change');
 
     })
+
+    
+</script>
+<script>
+    function validateAngka(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+        return false;
+        return true;
+        // body...
+    }
 </script>
 @endsection
