@@ -4,7 +4,7 @@
 @section('content')
 <div class="notika-status-area">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-bottom: 20px;">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
                     <div class="website-traffic-ctn">
@@ -37,9 +37,21 @@
                     </div>
                 </div>
             </div>
+            
         </div>
-    </div>
-</div>
+        <div class="row">
+            <div class="card wb-traffic-inner">
+                
+                    <div class="card-body">
+                        <h4>Tentang ESponsorship</h4>
+                        <blockquote class="blockquote mb-0">
+                            <p>ESponsorship adalah aplikasi pencarian perusahaan sponsor di Kota Tegal berbasis Website. Aplikasi Website ini hanya di peruntukan untuk mahasiswa anggota komunitas dan organisasi di Politeknik Harapan Bersama Kota Tegal. ESponsorship memudahkan para anggota komunitas dan organisasi dalam mencari sponsorsip yang mau untuk join di acaranya juga perusahaan sponsor yang akan mempromosikan produk agar lebih dikenal oleh publik. 
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
 <div class="sale-statistic-area" hidden>
     <div class="container">
         <div class="row">
@@ -109,9 +121,12 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
+          
+        
 
 @endsection

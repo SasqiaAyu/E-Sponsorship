@@ -9,6 +9,16 @@ Route::middleware(['web'])->group(function(){
     Route::get('/', function () {
         return view('welcome');
     })->name('landing_page');
+
+     Route::get('/coba', function () {
+        return view('coba');
+    })->name('page_coba');
+
+     Route::get('/default', function () {
+        return view('frontdefault');
+    })->name('frontdefault');
+
+
     Route::get('/verify', function () {
         return view('auth/verify');
     })->name('verify');    

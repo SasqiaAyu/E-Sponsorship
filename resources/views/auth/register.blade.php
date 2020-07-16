@@ -1,6 +1,31 @@
+
 @extends('layouts.auth')
 
 @section('content')
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">ESponsorship</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+             
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{{url('/default')}}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{{ route('register') }}">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -165,7 +190,7 @@
                             <label for="telp" class="col-md-4 col-form-label text-md-right">{{ __('Telpon') }}</label>
 
                             <div class="col-md-6">
-                                <input id="telp" type="text" class="form-control @error('telp') is-invalid @enderror" name="telp" value="{{ old('telp') }}" onkeypress="return validateAngka(event)"  title="only letters" required autocomplete="telp" autofocus>
+                                <input id="telp" type="text" class="form-control @error('telp') is-invalid @enderror" name="telp" value="{{ old('telp') }}" onkeypress="return validateAngka(event)"  title="masukan nomor telephone!" required autocomplete="telp" autofocus>
 
                                 @error('telp')
                                 <span class="invalid-feedback" role="alert">

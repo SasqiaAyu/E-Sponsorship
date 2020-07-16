@@ -108,7 +108,7 @@
                                     name="password_confirmation" autocomplete="new-password">
                             </div>
                         </div>
-                        <button class="btn btn-info" type="submit">Save</button>
+                        <button class="btn btn-info"   type="submit">Save</button>
                     </form>
                 </div>
             </div>

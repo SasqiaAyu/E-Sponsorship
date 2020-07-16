@@ -42,7 +42,7 @@
     }
 </style>
 <body>
-    <div class="header-top-area">
+    <div class="header-top-area" style="background-color: #212529">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -253,7 +253,7 @@
     </div>
     @yield('content')
 
-    <div class="footer-copyright-area">
+    <div class="footer-copyright-area" style="background-color: #212529">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

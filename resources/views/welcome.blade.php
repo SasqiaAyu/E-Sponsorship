@@ -13,7 +13,9 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                background-image: url('img/sponsor.png');
+                background-size: cover;
+                color: #fff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -42,14 +44,17 @@
 
             .content {
                 text-align: center;
+
+
             }
 
             .title {
-                font-size: 84px;
+                font-size: 150px;
+                font-weight: bold;
             }
 
             .links > a {
-                color: #636b6f;
+                color: #fff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -75,15 +80,18 @@
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+
+                        <a href="{{ url('/home') }}">Home</a>
+
                     @endauth
                 </div>
             @endif
             <div class="content">
                 <div class="title m-b-md">
-                    ESPONSORSHIP
+                    <b>ESPONSORSHIP</b>
                 </div>
 
-                {{-- <div class="links">
+               <!--  {{-- <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -92,7 +100,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> --}}
+                </div> --}} -->
             </div>
         </div>
     </body>
