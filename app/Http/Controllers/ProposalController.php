@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Proposal;
 use App\Company;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ApproveEmail;
 
 class ProposalController extends Controller
 {
@@ -93,8 +95,8 @@ class ProposalController extends Controller
         $proposal->tgl_approve = date("Y-m-d");
         $proposal->save();
 
+        //Mail::to($proposal->student->user->email)->send(new ApproveEmail($proposal));
         return response()->json( ["data" => "ok"] );
-
     }
 
     public function rejectProposal(Request $request)
