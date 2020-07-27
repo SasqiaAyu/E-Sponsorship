@@ -7,7 +7,7 @@ Auth::routes(['verify' => true]);
 
 Route::middleware(['web'])->group(function(){
     Route::get('/', function () {
-        return view('welcome');
+        return view('frontdefault');
     })->name('landing_page');
 
      Route::get('/coba', function () {
